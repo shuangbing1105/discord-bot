@@ -2,9 +2,9 @@ import discord
 from discord.ext import commands
 from pytube import YouTube
 import os
-
-client = commands.Bot(command_prefix = "!")
-
+intents = discord.Intents.default()
+intents.message_content = True
+client = discord.Client(intents=intents)
 @client.event
 async def ready_on():
 
@@ -109,5 +109,6 @@ async def skip(ctx):
     voice.stop()
 
 
-#把你的Token輸入在這邊
-client.run("MTE1MDMzMDk0Mjk1NTczMzAxNA.G0D1ZB.wE81ksW52S-h6GMLYRIMly4--MtcBgRZIrjX4U")
+
+
+bot.run("MTE1MDMzMDk0Mjk1NTczMzAxNA.Gfr8W1.5NP5xAmnIsE-IZ1unWUAEudtRi0KvAhNXLJOJ0")
