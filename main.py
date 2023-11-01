@@ -4,7 +4,7 @@ from pytube import YouTube
 import os
 intents = discord.Intents.default()
 intents.message_content = True
-client = discord.Client(intents=intents)
+client = commands.Bot(intents=intents, command_prefix='.')
 @client.event
 async def ready_on():
 
@@ -111,4 +111,4 @@ async def skip(ctx):
 
 
 
-bot.run("MTE1MDMzMDk0Mjk1NTczMzAxNA.Gfr8W1.5NP5xAmnIsE-IZ1unWUAEudtRi0KvAhNXLJOJ0")
+client.run("MTE1MDMzMDk0Mjk1NTczMzAxNA.Gfr8W1.5NP5xAmnIsE-IZ1unWUAEudtRi0KvAhNXLJOJ0")
